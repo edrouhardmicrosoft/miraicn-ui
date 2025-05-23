@@ -1,18 +1,18 @@
-# miraicn/ui
+# miraicn-ui
 
 Accessible and customizable components that you can copy and paste into your apps. Free. Open Source. **Use this to build your own component library**.
 
-*miraicn/ui is a fork of [shadcn/ui](https://github.com/shadcn/ui), building upon its excellent foundation to create a new component library.*
+*miraicn-ui is a fork of [shadcn/ui](https://github.com/shadcn/ui), building upon its excellent foundation to create a new component library.*
 
 ![hero](apps/www/public/og.jpg)
 
 ## Documentation
 
-Visit the documentation to learn more about using miraicn/ui.
+Visit the documentation to learn more about using miraicn-ui.
 
 ## Testing Locally
 
-You can test the miraicn/ui CLI locally before publishing to npm:
+You can test the miraicn-ui CLI locally before publishing to npm:
 
 ### Quick Start
 
