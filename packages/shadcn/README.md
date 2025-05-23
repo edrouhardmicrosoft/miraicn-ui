@@ -1,6 +1,8 @@
-# shadcn
+# shadcn (miraicn/ui CLI)
 
 A CLI for adding components to your project.
+
+This is the official CLI for miraicn/ui, a fork of [shadcn/ui](https://github.com/shadcn/ui).
 
 ## Usage
 
@@ -36,8 +38,8 @@ npx shadcn add
 
 ## Documentation
 
-Visit https://ui.shadcn.com/docs/cli to view the documentation.
+Visit the miraicn/ui documentation to learn more about the CLI.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+Licensed under the [MIT license](/LICENSE.md).

@@ -1,4 +1,4 @@
-import { type Registry } from "shadcn/registry"
+import { type Registry } from "miraicn-ui/registry"
 import { z } from "zod"
 
 import { blocks } from "@/registry/registry-blocks"
@@ -11,8 +11,8 @@ import { themes } from "@/registry/registry-themes"
 import { ui } from "@/registry/registry-ui"
 
 export const registry = {
-  name: "shadcn/ui",
-  homepage: "https://ui.shadcn.com",
+  name: "miraicn/ui",
+  homepage: "https://ui.miraicn.com",
   items: [
     ...ui,
     ...blocks,

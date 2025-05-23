@@ -16,7 +16,7 @@ import {
   Terminal,
 } from "lucide-react"
 import { ImperativePanelHandle } from "react-resizable-panels"
-import { registryItemFileSchema, registryItemSchema } from "shadcn/registry"
+import { registryItemFileSchema, registryItemSchema } from "miraicn-ui/registry"
 import { z } from "zod"
 
 import { trackEvent } from "@/lib/events"
@@ -214,11 +214,11 @@ function BlockViewerToolbar() {
             className="hidden h-[22px] w-auto gap-1 rounded-sm px-2 md:flex lg:w-auto"
             size="sm"
             onClick={() => {
-              copyToClipboard(`npx shadcn@latest add ${item.name}`)
+              copyToClipboard(`npx miraicn-ui@latest add ${item.name}`)
             }}
           >
             {isCopied ? <Check /> : <Terminal />}
-            <span className="hidden lg:inline">npx shadcn add {item.name}</span>
+            <span className="hidden lg:inline">npx miraicn-ui add {item.name}</span>
           </Button>
         </div>
         <Separator orientation="vertical" className="mx-1 hidden h-4 xl:flex" />

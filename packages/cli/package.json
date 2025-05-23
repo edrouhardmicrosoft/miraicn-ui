@@ -1,5 +1,5 @@
 {
-  "name": "shadcn-ui",
+  "name": "@miraicn/ui-legacy",
   "version": "0.9.5",
   "description": "Add components to your apps.",
   "publishConfig": {
@@ -7,12 +7,12 @@
   },
   "license": "MIT",
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "miraicn",
+    "url": "https://twitter.com/miraicn"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shadcn/ui.git",
+    "url": "https://github.com/miraicn/ui.git",
     "directory": "packages/cli"
   },
   "files": [

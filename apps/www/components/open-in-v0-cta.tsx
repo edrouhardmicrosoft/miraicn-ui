@@ -12,7 +12,7 @@ export function OpenInV0Cta({ className }: React.ComponentProps<"div">) {
       )}
     >
       <div className="text-balance text-lg font-semibold leading-tight group-hover:underline">
-        Deploy your shadcn/ui app on Vercel
+        Deploy your miraicn/ui app on Vercel
       </div>
       <div>Trusted by OpenAI, Sonos, Chick-fil-A, and more.</div>
       <div>

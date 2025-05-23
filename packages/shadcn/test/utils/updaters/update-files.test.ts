@@ -1099,15 +1099,15 @@ describe("toAliasedImport", () => {
         ui: "/foo/bar/components/ui",
       },
       aliases: {
-        components: "@shadcn/components",
-        ui: "@shadcn/ui",
+        components: "@miraicn/components",
+        ui: "@miraicn/ui",
       },
     }
     const projectInfo = {
-      aliasPrefix: "@shadcn",
+      aliasPrefix: "@miraicn",
     }
     expect(toAliasedImport(filePath, config, projectInfo)).toBe(
-      "@shadcn/ui/button"
+      "@miraicn/ui/button"
     )
   })
 

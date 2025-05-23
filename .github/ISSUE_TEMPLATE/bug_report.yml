@@ -27,7 +27,7 @@ body:
     id: components-affected
     attributes:
       label: Affected component/components
-      description: Which shadcn/ui components are affected?
+      description: Which miraicn/ui components are affected?
       placeholder: ex. Button, Checkbox...
     validations:
       required: true

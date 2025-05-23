@@ -1,6 +1,6 @@
-# shadcn/ui monorepo template
+# miraicn/ui monorepo template
 
-This template is for creating a monorepo with shadcn/ui.
+This template is for creating a monorepo with miraicn/ui (based on shadcn/ui).
 
 ## Usage
 
