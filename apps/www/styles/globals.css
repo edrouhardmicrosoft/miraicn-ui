@@ -72,12 +72,12 @@
     --mri-color-text-3: #707070;
     --mri-color-text-4: #bdbdbd;
 
-    --mri-color-brand-base: #0f6cbd;
+    --mri-color-brand-base: #115ea3;
     --mri-color-brand-text: #115ea3;
     
     /* Hover/active colors for light theme */
-    --mri-color-brand-hover: #0d5aa8; /* 85% lightness of brand */
-    --mri-color-brand-active: #0b4d91; /* 70% lightness of brand */
+    --mri-color-brand-hover: #0e4f8a; /* Darker for hover */
+    --mri-color-brand-active: #0c4372; /* Even darker for active */
 
     /* Legacy variable mappings for compatibility */
     --background: 0 0% 100%;
@@ -122,12 +122,12 @@
     --mri-color-text-3: #999999;
     --mri-color-text-4: #5c5c5c;
 
-    --mri-color-brand-base: #479ef5;
-    --mri-color-brand-text: #479ef5;
+    --mri-color-brand-base: #115ea3;
+    --mri-color-brand-text: #115ea3;
     
     /* Hover/active colors for dark theme */
-    --mri-color-brand-hover: #3d8bdc; /* 85% lightness of brand */
-    --mri-color-brand-active: #3275c3; /* 70% lightness of brand */
+    --mri-color-brand-hover: #0e4f8a; /* Darker for hover */
+    --mri-color-brand-active: #0c4372; /* Even darker for active */
 
     /* Legacy variable mappings for compatibility */
     --background: 0 0% 12%;
@@ -170,6 +170,14 @@
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
     font-family: var(--mri-font-family-sans);
+  }
+
+  /* Ensure buttons with colored backgrounds have white text */
+  button[class*="bg-brand"],
+  button[class*="bg-destructive"],
+  button[class*="bg-[var(--mri-color-brand-base)]"],
+  button[class*="bg-[#e74c3c]"] {
+    color: #ffffff;
   }
 
   @supports (font: -apple-system-body) and (-webkit-appearance: none) {

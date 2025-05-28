@@ -127,3 +127,7 @@ Components are not distributed as npm packages but through a registry system:
 - Uses changesets for version management
 - Follow conventional commits: `feat:`, `fix:`, `docs:`, etc.
 - Run `pnpm changeset` to document changes
+
+## Memories
+
+- Still didn't work and we shouldnt use !important declarations anywhere.

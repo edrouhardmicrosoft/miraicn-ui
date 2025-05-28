@@ -10,15 +10,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-brand text-white border border-transparent hover:bg-[var(--mri-color-brand-hover)] active:bg-[var(--mri-color-brand-active)]",
+          "bg-[var(--mri-color-brand-base)] text-white border border-transparent hover:bg-[var(--mri-color-brand-hover)] active:bg-[var(--mri-color-brand-active)]",
         destructive:
-          "bg-destructive text-destructive-foreground border border-transparent hover:bg-destructive/90 active:bg-destructive/80",
+          "bg-[#e74c3c] text-white border border-transparent hover:bg-[#c0392b] active:bg-[#a93226]",
         outline:
-          "bg-background text-foreground border border-border hover:bg-background-2 active:bg-background-3",
+          "bg-transparent text-foreground border border-border hover:bg-background-2 active:bg-background-3",
         secondary:
-          "bg-background-2 text-foreground border border-transparent hover:bg-background-3 hover:text-brand-text active:bg-background-4 active:text-brand-text",
+          "bg-background-2 text-foreground border border-transparent hover:bg-background-3 active:bg-background-4",
         ghost:
-          "bg-transparent text-foreground border border-transparent hover:bg-background-2 hover:text-brand-text active:bg-background-3 active:text-brand-text",
+          "bg-transparent text-foreground border border-transparent hover:bg-background-2 active:bg-background-3",
         link: "text-brand-text underline-offset-4 hover:underline hover:text-[var(--mri-color-brand-hover)] active:text-brand",
       },
       size: {
