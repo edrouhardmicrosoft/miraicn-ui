@@ -4,74 +4,156 @@
 
 @layer base {
   :root {
+    /* Mirai Design System Variables */
+    /* Font sizes */
+    --mri-font-size-1: 40px;
+    --mri-font-size-2: 28px;
+    --mri-font-size-3: 20px;
+    --mri-font-size-4: 16px;
+    --mri-font-size-5: 14px;
+    --mri-font-size-6: 12px;
+    --mri-font-size-7: 10px;
+
+    /* Font families */
+    --mri-font-family-sans: "Aptos", "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    --mri-font-family-mono: "Monaspace Neon", Consolas, Menlo, "Courier New", Courier, monospace;
+    --mri-font-family-mono-scale: 0.9em;
+
+    /* Font weights */
+    --mri-font-weight-regular: 400;
+    --mri-font-weight-bold: 600;
+
+    /* Border radius */
+    --mri-border-radius-small: 4px;
+    --mri-border-radius-medium: 8px;
+    --mri-border-radius-large: 12px;
+    --mri-border-radius-xlarge: 16px;
+    --mri-border-radius-circular: 10000px;
+    --mri-border-radius: var(--mri-border-radius-medium); /* default */
+
+    /* Durations */
+    --mri-duration-rest: 100ms;
+    --mri-duration-hover: 150ms;
+    --mri-duration-pressed: 50ms;
+
+    /* Shadows */
+    --mri-color-shadow-ambient: rgba(0, 0, 0, 0.24);
+    --mri-color-shadow-key: rgba(0, 0, 0, 0.28);
+    --mri-shadow-2: 0 0 2px var(--mri-color-shadow-ambient), 0 1px 2px var(--mri-color-shadow-key);
+    --mri-shadow-4: 0 0 2px var(--mri-color-shadow-ambient), 0 2px 4px var(--mri-color-shadow-key);
+    --mri-shadow-8: 0 0 2px var(--mri-color-shadow-ambient), 0 4px 8px var(--mri-color-shadow-key);
+    --mri-shadow-16: 0 0 2px var(--mri-color-shadow-ambient), 0 8px 16px var(--mri-color-shadow-key);
+    --mri-shadow-28: 0 0 8px var(--mri-color-shadow-ambient), 0 14px 28px var(--mri-color-shadow-key);
+    --mri-shadow-64: 0 0 8px var(--mri-color-shadow-ambient), 0 32px 64px var(--mri-color-shadow-key);
+
+    /* Background overlay */
+    --mri-color-background-overlay: rgba(0, 0, 0, 0.5);
+
+    /* Opacity */
+    --mri-opacity-disabled: 0.5;
+
+    /* Size system (medium is default) */
+    --mri-size-height: 32px;
+    --mri-size-font: var(--mri-font-size-5);
+    --mri-size-padding: 12px;
+    --mri-size-icon: 16px;
+
+    /* Light theme colors (Mirai default) - Using actual color values */
+    --mri-color-background-1: #ffffff;
+    --mri-color-background-2: #f5f5f5;
+    --mri-color-background-3: #f0f0f0;
+    --mri-color-background-4: #e6e6e6;
+
+    --mri-color-border-1: #d1d1d1;
+    --mri-color-border-2: #f0f0f0;
+
+    --mri-color-text-1: #000000;
+    --mri-color-text-2: #424242;
+    --mri-color-text-3: #707070;
+    --mri-color-text-4: #bdbdbd;
+
+    --mri-color-brand-base: #0f6cbd;
+    --mri-color-brand-text: #115ea3;
+    
+    /* Hover/active colors for light theme */
+    --mri-color-brand-hover: #0d5aa8; /* 85% lightness of brand */
+    --mri-color-brand-active: #0b4d91; /* 70% lightness of brand */
+
+    /* Legacy variable mappings for compatibility */
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 0 0% 0%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 0 0% 0%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 206 71% 43%;
+    --primary-foreground: 0 0% 90%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 44%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
     --destructive: 0 72.22% 50.59%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5% 64.9%;
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
+    --ring: 206 71% 43%;
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 240 5% 64.9%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    /* Dark theme colors (Mirai dark) - Using actual color values */
+    --mri-color-background-1: #1f1f1f;
+    --mri-color-background-2: #141414;
+    --mri-color-background-3: #0a0a0a;
+    --mri-color-background-4: #000000;
+
+    --mri-color-border-1: #666666;
+    --mri-color-border-2: #0a0a0a;
+
+    --mri-color-text-1: #ffffff;
+    --mri-color-text-2: #d6d6d6;
+    --mri-color-text-3: #999999;
+    --mri-color-text-4: #5c5c5c;
+
+    --mri-color-brand-base: #479ef5;
+    --mri-color-brand-text: #479ef5;
+    
+    /* Hover/active colors for dark theme */
+    --mri-color-brand-hover: #3d8bdc; /* 85% lightness of brand */
+    --mri-color-brand-active: #3275c3; /* 70% lightness of brand */
+
+    /* Legacy variable mappings for compatibility */
+    --background: 0 0% 12%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 209 87% 61%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 8%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 0 0% 40%;
+    --input: 0 0% 40%;
+    --ring: 209 87% 61%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 240 4.9% 83.9%;
   }
 }
 
@@ -81,12 +163,13 @@
   }
   html {
     @apply scroll-smooth;
+    background-color: var(--mri-color-background-3);
   }
   body {
     @apply bg-background text-foreground overscroll-none;
-    /* font-feature-settings: "rlig" 1, "calt" 1; */
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
+    font-family: var(--mri-font-family-sans);
   }
 
   @supports (font: -apple-system-body) and (-webkit-appearance: none) {
@@ -143,11 +226,15 @@
   }
 
   .border-grid {
-    @apply border-border/50 dark:border-border border-dashed;
+    @apply border-border border-dashed;
   }
 
   .container-wrapper {
-    @apply max-w-[1400px] min-[1800px]:max-w-screen-2xl min-[1400px]:border-x border-border/70 dark:border-border mx-auto w-full border-dashed;
+    @apply max-w-[1400px] min-[1800px]:max-w-screen-2xl min-[1400px]:border-x border-border mx-auto w-full border-dashed;
+    border-opacity: 0.7;
+  }
+  .dark .container-wrapper {
+    border-opacity: 1;
   }
 
   .container {

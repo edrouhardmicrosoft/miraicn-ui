@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mirai Visual Test Report</title>
+  <style>
+    body { 
+      font-family: system-ui; 
+      max-width: 1400px; 
+      margin: 0 auto; 
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 { color: #333; }
+    .comparison { 
+      margin: 20px 0; 
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .theme-section { 
+      display: flex; 
+      gap: 20px; 
+      margin: 20px 0; 
+    }
+    .theme-column { 
+      flex: 1; 
+    }
+    img { 
+      max-width: 100%; 
+      border: 1px solid #ddd; 
+      border-radius: 8px; 
+      display: block;
+    }
+    .section-title { 
+      font-weight: bold; 
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .info {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mirai Component Visual Test Report</h1>
+  <p>Generated: <script>document.write(new Date().toISOString())</script></p>
+  
+  <div class="info">
+    <h3>Test Summary</h3>
+    <p>This report shows the Mirai-styled shadcn components. The buttons should match the styling from <a href="https://aipx-proto.github.io/mirai-css" target="_blank">Mirai CSS demo</a>.</p>
+    <ul>
+      <li>Primary buttons should use brand color (#0f6cbd in light, #479ef5 in dark)</li>
+      <li>Buttons should have proper border radius options (square: 4px, rounded: 8px, circular: 10000px)</li>
+      <li>Font weight should be 600 (bold)</li>
+      <li>Hover states should show 85% opacity, active states 70% opacity</li>
+    </ul>
+  </div>
+  
+  <div class="comparison">
+    <h2>Button Components</h2>
+    <div class="theme-section">
+      <div class="theme-column">
+        <div class="section-title">Light Theme</div>
+        <img src="mirai-buttons-light.png" alt="Buttons - light theme">
+      </div>
+      <div class="theme-column">
+        <div class="section-title">Dark Theme</div>
+        <img src="mirai-buttons-dark.png" alt="Buttons - dark theme">
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison">
+    <h2>Full Page View</h2>
+    <div class="theme-section">
+      <div class="theme-column">
+        <div class="section-title">Light Theme</div>
+        <img src="mirai-components-light.png" alt="All components - light theme">
+      </div>
+      <div class="theme-column">
+        <div class="section-title">Dark Theme</div>
+        <img src="mirai-components-dark.png" alt="All components - dark theme">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

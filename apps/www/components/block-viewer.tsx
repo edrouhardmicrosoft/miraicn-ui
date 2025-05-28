@@ -15,8 +15,8 @@ import {
   Tablet,
   Terminal,
 } from "lucide-react"
-import { ImperativePanelHandle } from "react-resizable-panels"
 import { registryItemFileSchema, registryItemSchema } from "miraicn-ui/registry"
+import { ImperativePanelHandle } from "react-resizable-panels"
 import { z } from "zod"
 
 import { trackEvent } from "@/lib/events"
@@ -218,7 +218,9 @@ function BlockViewerToolbar() {
             }}
           >
             {isCopied ? <Check /> : <Terminal />}
-            <span className="hidden lg:inline">npx miraicn-ui add {item.name}</span>
+            <span className="hidden lg:inline">
+              npx miraicn-ui add {item.name}
+            </span>
           </Button>
         </div>
         <Separator orientation="vertical" className="mx-1 hidden h-4 xl:flex" />
